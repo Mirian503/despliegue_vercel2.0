@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-    'python_heroku_task'
+    'python_heroku_task',
 ]
 
 MIDDLEWARE = [
