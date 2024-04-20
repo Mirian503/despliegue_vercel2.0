@@ -36,7 +36,6 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 # Application definition
 
 INSTALLED_APPS = [
-    INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -97,8 +96,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': environ.get("database_user"),
-        'PASSWORD': environ.get("database_password"),
+        'USER': environ.get("database_USER"),
+        'PASSWORD': environ.get("database_PASSWORD"),
         'HOST': 'aws-0-us-west-1.pooler.supabase.com',
         'PORT': '5432',
     }
